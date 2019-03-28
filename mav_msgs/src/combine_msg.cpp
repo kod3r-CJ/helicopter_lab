@@ -15,7 +15,7 @@
 using namespace std;
 
 mav_msgs::comb mav_msg;
-mav_msgs::waypoint mav_way;
+//mav_msgs::waypoint mav_way;
 
 void altitude_cb(const mavros_msgs::Altitude::ConstPtr& msg){
     mav_msg.amsl = msg->amsl;
@@ -72,10 +72,10 @@ void state_cb(const mavros_msgs::State::ConstPtr& msg){
 
 }
 
-void waypoint_cb(const mavros_msgs::WaypointList::ConstPtr &msg){
+/*void waypoint_cb(const mavros_msgs::WaypointList::ConstPtr &msg){
     mav_way.waypointlist=*msg;
 }
-
+*/
 int main(int argc, char **argv)
 {
     ros::init(argc, argv, "mav_msgs");
