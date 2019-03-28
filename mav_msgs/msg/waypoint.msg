@@ -1,0 +1,3 @@
+std_msgs/Header header
+#mission_waypoints
+mavros_msgs/WaypointList waypointlist
